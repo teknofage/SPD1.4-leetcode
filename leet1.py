@@ -25,6 +25,7 @@ def brute_force(given_nums, target):
 print(brute_force(given_nums, target)) #print the function result
 
 
+
 # Hash table way
 #i = 0 #first element in hash table
 #hash = dict() #create a dictionary
@@ -44,5 +45,22 @@ def hash_table(given_nums, target):
     return False #if combination is not found
     
 print(hash_table(given_nums, target))
-                 
-        
+
+
+
+#Adding elements together by incrementing
+def two_sum(given_nums, target):
+    i = 0
+    j = len(given_nums) - 1
+    
+    while i <= j: 
+        if given_nums[i] + given_nums[j] == target: #if the two numbers sum to make the target
+            print(given_nums[i], given_nums[j]) #print the two numbers
+            return True #and return True
+        elif given_nums[i] + given_nums[j] < target: #if the two numbers sum to make less than the target
+            i += 1 #increment i by 1
+        else: 
+            j -= 1 #decrement j by 1
+    return False #pair not found
+
+print(two_sum(given_nums, target))

@@ -25,8 +25,9 @@ Explain Rationale
 
 Discuss tradeoffs 
 * The brute force solution would take longer, but also take up less space - time complexity: O(n^2), space complexity: O(1)
-* The hashtable solution would have a shorter time complexity, but use up more space.
+* The hashtable solution would have a shorter time complexity, but use up more space. - time complexity 0(n), space complexity 0(n)
 
 Suggest Improvements 
 * edge cases - 
 * other sides of the problem
+* third way of solving it uses incremeting, and has a time complexity of O(n), and a space complexity of O(1), because it does not use any extra data structures
