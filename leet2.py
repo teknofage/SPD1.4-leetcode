@@ -22,16 +22,51 @@ Number of nodes will not exceed 30.
 Each node's value is either 0 or 1.
 """
 
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+list_values = [1,0,0,1,1,0]
+decimal_value = 38
 
-class Solution(object):
-    def getDecimalValue(self, head):
-        """
-        :type head: ListNode
-        :rtype: int
-        """
-int("101", 2)
+#1.
+# using the int() function
+mylist = [1, 0, 0, 1, 1, 0]
+print("The values in mylist are : " + str(mylist))
+        
+# binary list to integer conversion
+result = 0
+for digits in mylist:
+    result = (result << 1) | digits
+
+# result
+print("The decimal value is : " + str(result))
+
+
+# Definition for singly-linked list.
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+#2.
+
+class Solution:
+    def getDecimalValue(self, head: ListNode) -> int:
+        binary_arr = []
+        current_node = head
+        while current_node is not None:
+            binary_arr.append(str(current_node.val))
+            current_node = current_node.next
+        print(binary_arr)
+        return int("".join(binary_arr), 2)
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+            

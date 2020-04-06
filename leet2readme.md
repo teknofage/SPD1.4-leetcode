@@ -14,11 +14,15 @@ State Assumptions
 Think Out Loud 
 
 Brainstorm Solutions 
+* could use int() function to convert a string of binary digits to a decimal number
 
 Explain Rationale 
+* this is the best solution I can find
 
 Discuss tradeoffs 
+* first solution is simple, but it does not traverse the linked list
+* second solution is more complex, but fulfils the requirements
 
-Suggest Improvements 
-* edge cases
+Suggest Improvements - still don't know how to do this
+* edge cases 
 * other sides of the problem
