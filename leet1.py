@@ -15,6 +15,16 @@ return [0, 1]."""
 given_nums = [2, 7, 11, 15]
 target = 9
 
+# variable table
+# variables: values
+# given_nums: [2, 7, 11, 15]
+# target: 9
+# i : 0
+# highest i: 2
+# j: 1
+# highest j: 3
+# outcome: print i and j, return True
+
 # Brute force way
 def brute_force(given_nums, target):
     for i in range(len(given_nums)-1): #for each index in the length of the array
